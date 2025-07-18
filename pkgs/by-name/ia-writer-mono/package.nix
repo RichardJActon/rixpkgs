@@ -20,6 +20,7 @@ stdenvNoCC.mkDerivation {
 
     mkdir -p $out/share/fonts/truetype
     cp iA\ Writer\ Mono/Variable/*.ttf $out/share/fonts/truetype
+    install -D iA\ Writer\ Mono/Variable/iAWriterMonoV.ttf $out/share/fonts/truetype/iAWriterMonoV.ttf
 
     runHook postInstall
   '';
